@@ -1,0 +1,45 @@
+<h3 id="-">第１７章 パッケージ（要点）</h3>
+<ul>
+<li>パッケージ<br>名前の衝突を防ぐために用意されたグループ訳の仕組み。<br>クラスの名前が同じであってもパッケージが異なっている限り、異なるクラスとして扱われる。<br>!!! 今まで記述していたpublicなクラスは、パッケージの外からも利用できる。また、publicと宣言していないクラスはパッケージの中でしか使うことができない。!!!</li>
+</ul>
+<blockquote>
+<p>パッケージ名.クラス名<br>例）java.util.Random　(java.utilがパッケージ名、Randomはクラス名）</p>
+</blockquote>
+<ul>
+<li>import<br>パッケージの取り込みを明示するもの。<br>明示することで、パッケージ内のすべてのpublicなクラスとインターフェースをとりこむことができる。</li>
+</ul>
+<blockquote>
+<p>import パッケージ名.<em>;<br>例)import java.util.</em>; 　(java.utilがパッケージ名、*は&quot;このパッケージ内のクラスとインターフェースに合致&quot;という意味。&quot;このパッケージ何のサブパッケージに合致と&quot;という意味ではない)</p>
+</blockquote>
+<h4 id="-">アクセス制御に関して覚えること!!</h4>
+<h5 id="-">アクセス制御とは</h5>
+<p>パッケージの外からどのクラスが使えるか、またクラスの外からどのメソッドが使えるのかを制御すること(決めること）</p>
+<h4 id="-">↓これは覚えておこう↓</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">修飾子</th>
+<th style="text-align:right">　内容(機能)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">private</td>
+<td style="text-align:right">自分のクラス内だけに見せる名前</td>
+</tr>
+<tr>
+<td style="text-align:left">protected</td>
+<td style="text-align:right">パッケージだけでなくサブクラスにも見せる名前</td>
+</tr>
+<tr>
+<td style="text-align:left">public</td>
+<td style="text-align:right">みんなに見せる名前</td>
+</tr>
+<tr>
+<td style="text-align:left">なし</td>
+<td style="text-align:right">自分のパッケージに見せる名前</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-">イメージ</h4>
+<p> <img src="/Users/tak-hashimoto/Documents/workspace/java/Sample/08/package.gif" alt="&#x56F3;"></p>
